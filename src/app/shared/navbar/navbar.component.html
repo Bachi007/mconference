@@ -1,0 +1,27 @@
+<nav class="navbar navbar-expand-lg  navbar-dark bg-primary" style="background-color: #232527 !important;">
+  <a class="navbar-brand" href="#">
+    <img src="assets/img/mil-light-logo.jpg" alt="Miracle software systems" style="height:auto;width:135px">
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+    aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item" [routerLinkActive]="['active']">
+        <a class="nav-link" [routerLink]="['/dashboard/bookings']">Bookings<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item" [routerLinkActive]="['active']">
+        <a class="nav-link" [routerLink]="['/dashboard/history']">My Bookings</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0" style="margin-right: 4%;">
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMrYqax_J2xys7O57n0QcYyBXR-AGNwPGBmaw6j-xJXHyFwAu5"
+        style="max-width: 30px;max-height: 30px;border-radius: 30px;">
+      <h4 style="color:#ffffff; padding: 1px 10px;">{{userName}} </h4>
+      <i class="fa fa-sign-out" style="font-size:24px;color:#ffffff" (click)="logout()"></i>
+    </form>
+  </div>
+</nav>
